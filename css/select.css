@@ -1,0 +1,111 @@
+.div-select {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #cccaca;
+    position: relative;
+    height: 20px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.div-selected {
+    padding: 0 22px 0 5px;
+    z-index: 1;
+}
+
+.select-open {
+    border: none;
+    height: 22px;
+}
+
+.select-open>.div-options>.div-selected {
+    border-bottom: 1px solid #CCCACA;
+}
+
+.div-option {
+    display: none;
+    padding: 0 22px 0 5px;
+    margin-top: 2px;
+}
+
+.div-option>span,
+.div-selected>span {
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+}
+
+.div-option:hover {
+    background-color: #FF5100;
+}
+
+.option-selected {
+    background-color: rgba(255, 81, 0, 0.5);
+}
+
+.div-select>select {
+    display: none;
+}
+
+.div-options::after {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    pointer-events: none;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid #2D2D2D;
+    border-bottom: 1px solid #2D2D2D;
+    border-top: 0;
+    border-left: 0;
+    transform: rotate(45deg) scale(1) translate(-50%, -50%);
+    opacity: 1;
+    transition: all .2s cubic-bezier(.12, .4, .29, 1.46) .1s;
+    content: " ";
+}
+
+.select-open>.div-options::after {
+    border-top: 1px solid #2D2D2D;
+    border-left: 1px solid #2D2D2D;
+    border-right: 0;
+    border-bottom: 0;
+    top: 16px;
+}
+
+.select-open>.div-options>.div-option-wrap>.div-option {
+    display: block;
+}
+
+.select-open>.div-options {
+    background-color: #fff;
+    z-index: 10;
+    border: 1px solid #CCCACA;
+    border: 1px solid #CCCACA;
+    border: 1px solid #CCCACA;
+}
+
+.div-options {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.div-option-wrap {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 120px;
+}

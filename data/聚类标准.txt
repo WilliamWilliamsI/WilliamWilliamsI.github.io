@@ -1,0 +1,9 @@
+Opnprc [日开盘价]
+Hiprc [日最高价]
+Loprc [日最低价]
+Clsprc [日收盘价]
+Dnshrtrd [日个股交易股数] / 百万
+Dnvaltrd [日个股交易金额] / 百万
+Markettype [市场类型]
+Trdsta [交易状态]
+ChangeRatio [涨跌幅]
