@@ -6,7 +6,7 @@ function Predict()
     divEle.innerHTML = "股 票 列 表 &nbsp";
     divEle.style.fontSize = "20px";
     divEle.style.margin = "10px 10px 10px 100px";
-    d3.csv("../data/stockListHuShen300.csv").then(data=>
+    d3.csv("../data/SL300.csv").then(data=>
     {
         // let stockList = Array.from(new Set(data.map(d=>d["Stkcd"])));
         let stockList = data.map(d=>d["Stkcd"]);
